@@ -32,13 +32,6 @@ for filename in os.listdir('./src/cogs'):
 async def on_ready():
     print('Bot is ready.')
 
-#@client.event
-#async def on_message(ctx):
-#    if(str(ctx.author) == "Hal9000#0673"):
- #       time.sleep(5)
- #       await ctx.delete()
- #       time.sleep(30)
-
 @client.command()
 @commands.has_guild_permissions()
 async def clear(ctx, amount = 5):
